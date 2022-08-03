@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOGLE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        :root{
+            --default: 1.6rem;
+            --texto: font-family: 'Open Sans', sans-serif;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        body{
+            box-sizing: border-box;
+            height: 100vh;
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+            cursor: pointer;
+            color: #000000;
+        }
+        nav ul{
+            list-style: none;
+        }
+        header{
+            width: 100%;
+        }
+        .navbar-header{
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 12px;
+        }
+        .navbar-header ul{
+            display: flex;
+            align-items: center;
+        }
+        .navbar-header ul li a{
+            margin-left: 12px;
+            font-size: var(--default);
+        }
+        .navbar-header .menu-icon{
+            margin-left: 8px;
+            height: 20px;
+            padding: 12px;
+        }
+        .navbar-header .menu-icon:hover{
+            background-color: #e9e9e9;
+            border-radius: 50%;
+            
+        }
+        .navbar-header .face{
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 16px;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            flex-direction: column;
+        }
+        .buscar{
+            position: relative;
+        }
+        .buscador{
+            width: 500px;
+            height: 44px;
+            border-radius: 40px;
+            border: 1px solid #dfe1e5;
+            padding: 0 40px;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            outline: none;
+        }
+        .buscador:hover{
+            box-shadow: 0 1px 6px 0 #20212447;
+            border-color: #dfe1e500;
+        }
+        .search{
+            height: 18px;
+            position: absolute;
+            left: 12px;
+            top: 62px;
+        }
+        .micro{
+            height: 24px;
+            position: absolute;
+            right: 20px;
+            top: 60px;
+        }
+        .button{
+            margin: 12px 4px;
+            padding: 8px 20px;
+            border: 1px solid #f8f9fa;
+            background-color: #f8f9fa;
+        }
+        footer{
+            width: 100%;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            background-color: #f2f2f2;
+        }
+        .navbar-footer-left{
+            display: flex;
+            width: 50%;
+            margin-left: 32px;
+        }
+        .navbar-footer-left ul{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 12px;
+        }
+        .navbar-footer-left ul li a{
+            font-size: var(--default);
+            color: #70757a;
+            margin: 0 32px 0 0;
+        }
+        .navbar-footer-right{
+            width: 50%;
+            margin: 12px 0;
+        }
+        .navbar-footer-right ul{
+            display: flex;
+            justify-content:flex-end;
+            align-items: center;
+            margin-right: 8px;
+        }
+        .navbar-footer-right ul li a{
+            font-size: var(--default);
+            margin: 0 32px 0 0;
+            color: #70757a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar-header">
+            <ul>
+                <li><a href="/">Gmail</a></li>
+                <li><a href="/">Im&aacute;genes</a></li>
+                <li><a href="/"><img src="./img/menu.svg" alt="menu" class="menu-icon"></a></li>
+                <li><a href="/"><img src="https://lh3.googleusercontent.com/a-/AFdZucph3xKDehEwmMogjmwLARuOFnAKy-Tg-TEavHJP4NU=s288-p-rw-no" alt="Face" class="face"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <picture>
+            <img src="./img/Google_logo.svg" alt="Google" class="logo-google">
+        </picture>
+        <section class="buscar">
+            <input type="text" class="buscador">
+            <img src="./img/search.svg" alt="search" class="search">
+            <a href="/"><img src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" alt="microphone" class="micro"></a>
+        </section>
+        <section>
+            <button class="button" type="button">
+                Buscar con Google
+            </button>
+            <button class="button" type="button">
+                Voy a tener suerte
+            </button>
+        </section>
+    </main>
+    <footer>
+        <nav class="navbar-footer-left">
+            <ul>
+                <li><a href="/">Publicidad</a></li>
+                <li><a href="/">Negocios</a></li>
+                <li><a href="/">Acerca de</a></li>
+                <li><a href="/">C&oacute;mo funciona la b&uacute;squeda</a></li>
+            </ul>
+        </nav>
+        <nav class="navbar-footer-right">
+            <ul>
+                <li><a href="/">Privacidad</a></li>
+                <li><a href="/">Condiciones</a></li>
+                <li><a href="/">Preferencias</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
