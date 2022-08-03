@@ -102,17 +102,42 @@
             top: 60px;
         }
         .button{
-            margin: 12px 4px;
-            padding: 8px 20px;
+            height: 36px;
+            width: 154px;
+            margin: 11px 4px;
+            padding: 0 16px;
             border: 1px solid #f8f9fa;
             background-color: #f8f9fa;
+            color: #3c4043;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover{
+            border: 1px solid #c6c6c6;
+            box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+            color: #222;
+            background-color: #f8f8f8;
         }
         footer{
             width: 100%;
-            display: flex;
             position: absolute;
             bottom: 0;
             background-color: #f2f2f2;
+        }
+        .footer-pais{
+            height: 48px;
+            width: 100%;
+            border-bottom: 1px solid #e4e4e4;
+        }
+        .footer-pais > p{
+            font-size: var(--default);
+            color: #70757a;
+            padding: 14px 0 0 40px;
+        }
+        .navbar-footer-container{
+            width: 100%;
+            height: 46px;
+            display: flex;
         }
         .navbar-footer-left{
             display: flex;
@@ -127,7 +152,7 @@
         }
         .navbar-footer-left ul li a{
             font-size: var(--default);
-            color: #70757a;
+            color: #5f6368;
             margin: 0 32px 0 0;
         }
         .navbar-footer-right{
@@ -143,7 +168,7 @@
         .navbar-footer-right ul li a{
             font-size: var(--default);
             margin: 0 32px 0 0;
-            color: #70757a;
+            color: #5f6368;
         }
     </style>
 </head>
@@ -177,21 +202,26 @@
         </section>
     </main>
     <footer>
-        <nav class="navbar-footer-left">
-            <ul>
-                <li><a href="/">Publicidad</a></li>
-                <li><a href="/">Negocios</a></li>
-                <li><a href="/">Acerca de</a></li>
-                <li><a href="/">C&oacute;mo funciona la b&uacute;squeda</a></li>
-            </ul>
-        </nav>
-        <nav class="navbar-footer-right">
-            <ul>
-                <li><a href="/">Privacidad</a></li>
-                <li><a href="/">Condiciones</a></li>
-                <li><a href="/">Preferencias</a></li>
-            </ul>
-        </nav>
+        <section class="footer-pais">
+            <p>Guatemala</p>
+        </section>
+        <section class="navbar-footer-container">
+            <nav class="navbar-footer-left">
+                <ul>
+                    <li><a href="/">Sobre Google</a></li>
+                    <li><a href="/">Publicidad</a></li>
+                    <li><a href="/">Negocios</a></li>
+                    <li><a href="/">C&oacute;mo funciona la B&uacute;squeda</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar-footer-right">
+                <ul>
+                    <li><a href="/">Privacidad</a></li>
+                    <li><a href="/">Condiciones</a></li>
+                    <li><a href="/">Preferencias</a></li>
+                </ul>
+            </nav>
+        </section>
     </footer>
 </body>
 </html>
