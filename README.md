@@ -18,7 +18,7 @@ Este es un clon del famoso buscador de Google, desarrollado por [Josue Maldonado
 
 -   HTML5
 -   CSS3
--   JavaScript (puedes mencionar si utilizaste alguna librería o framework específico)
+-   JavaScript 
 
 
 
